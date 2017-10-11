@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class AddViewController: UIViewController, UITextFieldDelegate {
   
@@ -15,6 +16,7 @@ class AddViewController: UIViewController, UITextFieldDelegate {
   @IBOutlet weak var companyTxtField: UITextField!
   
   var type : String?
+  let realm = try! Realm()
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -36,8 +38,49 @@ class AddViewController: UIViewController, UITextFieldDelegate {
     return storyboard.instantiateViewController(withIdentifier: "AddViewController") as! AddViewController
   }
   
-  @objc private func saveDetails() {
+  @objc func saveDetails() {
     
+    nameTxtField.resignFirstResponder()
+    ageTxtField.resignFirstResponder()
+    companyTxtField.resignFirstResponder()
+    
+    if type == Type.Set1.rawValue {
+      let set1 = Set1Item()
+      set1.age = ageTxtField.text ?? ""
+      set1.company = companyTxtField.text ?? ""
+      set1.name = nameTxtField.text ?? ""
+      
+      try! realm.write {
+        realm.add(set1)
+      }
+    }
+    
+    if type == Type.Set2.rawValue {
+      let set2 = Set2Item()
+      set2.age = ageTxtField.text ?? ""
+      set2.company = companyTxtField.text ?? ""
+      set2.name = nameTxtField.text ?? ""
+      
+      try! realm.write {
+        realm.add(set2)
+      }
+    }
+    
+    if type == Type.Set3.rawValue {
+      let set3 = Set3Item()
+      set3.age = ageTxtField.text ?? ""
+      set3.company = companyTxtField.text ?? ""
+      set3.name = nameTxtField.text ?? ""
+      
+      try! realm.write {
+        realm.add(set3)
+      }
+    }
+    
+    ageTxtField.text = ""
+    companyTxtField.text = ""
+    nameTxtField.text = ""
+    self.navigationController?.popViewController(animated: true)
   }
   
 }
