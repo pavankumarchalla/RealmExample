@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		444FE5915AF427AE18DB5F70 /* Pods_RealmExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF58D09115418E735F83D9AB /* Pods_RealmExample.framework */; };
+		D09533071F8F378800755102 /* RealmConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09533061F8F378800755102 /* RealmConfiguration.swift */; };
 		D0F21F3F1F8DFD0A00EC4D59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F21F3E1F8DFD0A00EC4D59 /* AppDelegate.swift */; };
 		D0F21F441F8DFD0A00EC4D59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F21F421F8DFD0A00EC4D59 /* Main.storyboard */; };
 		D0F21F461F8DFD0A00EC4D59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F21F451F8DFD0A00EC4D59 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		1DDDAFB59425FE6B46C054CE /* Pods-RealmExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmExample/Pods-RealmExample.debug.xcconfig"; sourceTree = "<group>"; };
 		BF58D09115418E735F83D9AB /* Pods_RealmExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09533061F8F378800755102 /* RealmConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmConfiguration.swift; sourceTree = "<group>"; };
 		D0F21F3B1F8DFD0A00EC4D59 /* RealmExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F21F3E1F8DFD0A00EC4D59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0F21F431F8DFD0A00EC4D59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				D0F21F3E1F8DFD0A00EC4D59 /* AppDelegate.swift */,
+				D09533061F8F378800755102 /* RealmConfiguration.swift */,
 				D0F21F561F8E1C4800EC4D59 /* Models */,
 				D0F21F501F8E010E00EC4D59 /* InitialViewController.swift */,
 				D0F21F521F8E015300EC4D59 /* SetTableViewController.swift */,
@@ -246,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0F21F5A1F8E227200EC4D59 /* Set2Item.swift in Sources */,
+				D09533071F8F378800755102 /* RealmConfiguration.swift in Sources */,
 				D0F21F581F8E206E00EC4D59 /* Set1Item.swift in Sources */,
 				D0F21F5C1F8E22A600EC4D59 /* Set3Item.swift in Sources */,
 				D0F21F511F8E010E00EC4D59 /* InitialViewController.swift in Sources */,

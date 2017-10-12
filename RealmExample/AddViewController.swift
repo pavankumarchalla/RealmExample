@@ -16,7 +16,7 @@ class AddViewController: UIViewController, UITextFieldDelegate {
   @IBOutlet weak var companyTxtField: UITextField!
   
   var type : String?
-  let realm = try! Realm()
+  let realm = RealmConfiguration.sharedRealm.defaultRealmInstance()
   
   override func viewDidLoad() {
     super.viewDidLoad()

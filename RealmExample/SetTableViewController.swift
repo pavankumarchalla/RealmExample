@@ -15,7 +15,7 @@ class SetTableViewController: UITableViewController {
   var set1Items : Results<Set1Item>?
   var set2Items : Results<Set2Item>?
   var set3Items : Results<Set3Item>?
-  var realm = try! Realm()
+  var realm = RealmConfiguration.sharedRealm.defaultRealmInstance()
   
   override func viewDidLoad() {
     super.viewDidLoad()
